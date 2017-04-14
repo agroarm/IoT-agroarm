@@ -1,0 +1,15 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: eu-gb.mybluemix.net
+  name: IoT-agroarm
+  host: IoT-agroarm
+  disk_quota: 1024M
+  services:
+  - IoT-agroarm-cloudantNoSQLDB
+  - IoT-agroarm-iotf-service
+  - availability-monitoring-auto
+  env:
+    NODE_RED_USERNAME: agroarm
+    NODE_RED_PASSWORD: iotagroarm
